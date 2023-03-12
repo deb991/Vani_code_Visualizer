@@ -3,7 +3,7 @@ import os.path
 import sys
 import subprocess
 
-inpt = sys.argv
+#input = sys.argv
 
 
 def inpt_len(input: os.path):
@@ -18,22 +18,15 @@ def inpt_len(input: os.path):
         print('File Name__1:\t', file_name)
         finl_str = f"viztracer " + file_name
         print("File Name:\t", finl_str)
-        subprocess.run(finl_str, shell=True)
+        cmd = subprocess.run(finl_str, shell=True)
         print('Process Completed!!!')
-        #if os.path.isfile(file_name):
-        #    subprocess.call(["viztracer", f" {file_name}"])
+        exit(0)
         return finl_str
     else:
         print("Error in file name!!!")
-    exit(0)
+    exit(1)
+
 
 if __name__ == '__main__':
-    try:
-        i = input()
-        inpt_len(i)
-    except:
-        try:
-            i = sys.argv[0]
-            inpt_len(i)
-        except:
-            print("Input not correct!!!")
+    i = input('Script Path\t:')
+    inpt_len(i)
