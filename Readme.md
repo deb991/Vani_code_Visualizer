@@ -8,15 +8,15 @@ In the initial commit, I only add single procedure for visualization.
 To be more specific, in the upcoming releases, I will try to integrate 
 more complex procedure to make easy & users friendly results.  
 
-    `python -r req.txt'
-To make Priject ready environment. 
+    `pip install -r req.txt'
+To make Project ready environment. 
 
-Once set up got completed. we can priceed to test our first script 
+Once set up got completed. we can proceed to test our first script 
 & visualize the output. 
 
     `python .\\code_tracer\\caller\\__init__.py`
 
-Hence once, the execute the called script, we need to provide actual 
+Hence, once, to execute the called script, we need to provide actual 
 script location along with Directory.
 
                                     `python .\caller\__init__.py`
