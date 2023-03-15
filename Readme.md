@@ -19,4 +19,12 @@ Once set up got completed. we can priceed to test our first script
 Hence once, the execute the called script, we need to provide actual 
 script location along with Directory.
 
+                                    `python .\caller\__init__.py`
+ 
+Now followed by `Script Path` will be input file prompt. 
+Where we need to provide full file path. 
+
+File will be generated as per {input script fullpath, but '_' separated} 
+to make it easier to find. 
+
 More changes to come. 
