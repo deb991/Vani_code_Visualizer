@@ -2,7 +2,7 @@ import os
 import os.path
 import sys
 import subprocess
-from side_load import nl
+# from side_load import nl
 
 from mods.outpt_file_mapper import get_proj_dir, make_output_dir_file
 
@@ -22,7 +22,7 @@ def inpt_len(input: str):
     output_path = make_output_dir_file(cur_dir, file_name1)
     output_file = f"{file_name1}+.html"
 
-    print(f"Outfile Path:\t{output_path},{nl()} Output_file:\t{output_file}")
+    print(f"Outfile Path:\t{output_path}, Output_file:\t{output_file}")
 
     dir_str = f"{output_path}//{output_file}"
     file_path = os.path.join(dir_str)
