@@ -52,6 +52,5 @@ class ScriptCaller:
 
 
 if __name__ == '__main__':
-    file_name = input('Enter File name with dir:\t')
     script = ScriptCaller()
     script.get_fin_str()
